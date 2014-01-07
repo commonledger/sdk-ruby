@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |gem|
-  gem.name        = "common-ledger-sdk"
+  gem.name        = "commonledger-sdk"
   gem.version     = "0.0.1"
   gem.description = "Official CommonLedger API library client for ruby"
   gem.summary     = "Official CommonLedger API library client for ruby"
