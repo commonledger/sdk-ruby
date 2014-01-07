@@ -6,8 +6,8 @@ Gem::Specification.new do |gem|
   gem.description = "Official CommonLedger API library client for ruby"
   gem.summary     = "Official CommonLedger API library client for ruby"
 
-  gem.author   = "Patrick Hindmarsh"
-  gem.email    = "patrick@hindmar.sh"
+  gem.author   = "Common Ledger"
+  gem.email    = "api@commonledger.com"
   gem.homepage = "https://commonledger.com"
   gem.license  = "MIT"
 

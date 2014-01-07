@@ -1,6 +1,7 @@
 require "faraday"
 require "json"
 
+require "common_ledger/api/auth"
 require "common_ledger/api/accounts"
 require "common_ledger/api/tax"
 require "common_ledger/api/journals"
@@ -11,6 +12,12 @@ module CommonLedger
 
     def initialize(auth = {}, options = {})
       @http_client = CommonLedger::HttpClient::HttpClient.new auth, options
+    end
+
+    # Using OAuth 2.0 to connect to Common Ledger
+    #
+    def auth()
+      CommonLedger::Api::Auth.new @http_client
     end
 
     # Manages data relating to the Chart of Accounts
